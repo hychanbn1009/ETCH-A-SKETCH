@@ -17,11 +17,14 @@ function creategrid(gridNumber){
         div.classList.add('div2')
         div.setAttribute('id',i)
         contain.appendChild(div);
-        div.addEventListener('mouseover',event=>{event.target.style.backgroundColor='blue'})
+        let backgroundColor='red'
+        console.log(backgroundColor)
+        div.addEventListener('mouseover',event=>{event.target.style.backgroundColor=`${backgroundColor}`})
     }
 }
 
 const resetButton=document.getElementById('reset').addEventListener("click",resetContainer,false)
+const redButton=document.getElementById('red').addEventListener("click",null,false)
 
 function resetContainer(){
     const contain = document.getElementById('container');
@@ -36,3 +39,4 @@ function resetContainer(){
 }
 
 askGrid();
+

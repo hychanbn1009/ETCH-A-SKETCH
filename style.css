@@ -8,3 +8,7 @@ div {
   border-width: 1px;
   border-style: solid;
 }
+
+.button_container {
+  border-width: 0px;
+}
